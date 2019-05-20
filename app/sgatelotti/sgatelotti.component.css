@@ -1,0 +1,22 @@
+::ng-deep  .modal-dialog { 
+	max-width: 90%;
+	width: 90%;
+}
+
+::ng-deep   .modal-body{
+	overflow-y: auto;
+	height: 330px;
+	overflow-x: hidden;
+}
+
+  ::ng-deep  .modal-dialog{
+    overflow-y: initial !important
+}
+
+.colored{
+	background-color: chartreuse;
+}
+
+.none{
+	background-color: crimson;
+}

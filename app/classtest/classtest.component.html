@@ -1,0 +1,82 @@
+<!-- <div class="row">
+
+    <select [(ngModel)]="lotti" (change)="getRandomColor($event)" id="sel1" name="sel1">
+        <option *ngFor="let brand of lotti" [ngValue]="brand.cognome">{{brand.name}}</option>
+      </select>
+  
+<div class="col-md-4">
+    <div class="col-md-4">
+        <select (change)="getRandomColor($event.target)" >
+          <option *ngFor="let type of lotti; let i=index" #riga confirm value=type.name [selected]="type.id==6" >{{type.id}}</option>
+        </select>
+      </div>
+  </div>
+
+  <div class="col-md-10"  [style.display]="visible? 'block':'none'">
+    <table class="table-bordered">
+      <thead>
+        <tr>
+          <th>nominativo</th>
+          <th>cognomenubile</th>
+          <th>etaanagrafica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of lotti; let i=index" (click)="getRowSelected(i,item)"
+          [ngClass]="i==rowselected?'font':'color'">
+          <td (click)="getCol($event)">{{item.id}}</td>
+          <td [attr.width]=h [attr.height]=w>{{item.name}}</td>
+          <td>{{item.cognome}}</td>
+          <td>{{item.id}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-4"> <button [ngClass]="" #test name="test"> tutto bene</button></div>
+  <div class="col-md-8"> <textarea #tasknote></textarea> </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <input type="text" #insert >>getvalue
+    <input (keyup.enter)="onKey($event.target.value)" id="btngoogleid"  #rest confirm>onkeyup
+    <input [(ngModel)]="keyinputel">onkeyinput
+    <input (ngModel)="outputngmodel">onput
+  </div>
+
+  <div class="col-md-6">
+    <table class="table-bordered">
+      <thead>
+        <tr>
+          <th>nominativo</th>
+          <th>cognomenubile</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let itm of lotti; let rowIndex = index" (click)=onCreateTable(rowIndex)>
+ 
+          <td><input type="text"   [(ngModel)]="data[rowIndex].unit">{{itm.cognome}}</td>
+          <td><input type="number" [(ngModel)]="data[rowIndex].quantity">{{itm.name}</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+<button class="btn-info" confirm ><span class="fa fa-3x fa-download">spara</span></button>
+<button class="btn-info" (click)="provapromise($event)"  ><span class="fa fa-3x fa-download">prova promise</span></button>
+ -->
+
+
+
+  <div class="btn-group">
+      <!-- <div [style.color]="randomcolor" > I would be styled with different colors dynamically </div> -->
+      <button (click)="setColor()"> Set my color </button>
+      <button class="btn-secondary" (click)="getusers()"   >caccia i lotti</button>
+      <button class="btn-secondary" (click)="getmodalresult()" >cattura la result della modale</button>
+  </div>

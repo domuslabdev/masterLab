@@ -1,0 +1,11 @@
+.table tr.active td {
+    background-color:chocolate !important;
+    color: darkgreen;
+  }
+
+  .color{
+    color: chartreuse;
+}
+.font{
+    font-size: 20px;
+}

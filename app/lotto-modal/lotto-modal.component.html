@@ -1,0 +1,21 @@
+
+<div class="modal-content lottomodal">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Inserimento Lotto</h4>
+    <button type="button" class="close" aria-label="Close" (click)="dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body"  >
+    <input type="text"  [(ngModel)]="estur.Desc" ><span>{{estur.Dim}}</span>
+    <input type="text" [(ngModel)]="estur.Dim"><span>Data Carico</span>
+    <input type="text" [(ngModel)]="estur.Esito"><span>Dimensione</span>
+    <input type="text" [(ngModel)]="estur.Status"><span>Stato</span>
+    <input type="text" [(ngModel)]="estur.LotId"><span>Esito</span>
+  </div>
+  <div class="modal-footer"  >
+    <button type="button" class="btn btn-outline-dark" (click)="decline()">CLose</button>
+    <button type="button" class="btn btn-outline-dark" (click)="accept()">{{btnOkText}}</button>
+  </div>
+
+</div>
