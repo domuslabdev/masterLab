@@ -1,7 +1,0 @@
-I sono su dev repo 2
-<<<<<<< HEAD
-commit su repo2 modificata
-altro commit su repo2
-=======
-commit su repo2 modify
->>>>>>> 764070d87f8bf2a9a37777fbb2988fef00321be1
